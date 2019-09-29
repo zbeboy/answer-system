@@ -14,8 +14,7 @@
   <title>答题系统</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="plugin/jquery.steps/jquery.steps.css">
-  <link rel="stylesheet" href="plugin/bracket/bracket.css">
+  <link rel="stylesheet" href="plugin/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico">
 
@@ -23,16 +22,17 @@
 </head>
 
 <body>
-<div id="container">
-  <my-app>Loading...</my-app>
-</div>
 
+  <my-app >
+    <div class="text-center m-5">
+      <div class="spinner-border text-info m-5" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </my-app>
 
-  <script src="plugin/jquery/jquery-3.4.1.min.js"></script>
-  <script src="plugin/bootstrap/js/popper.js"></script>
-  <script src="plugin/bootstrap/js/bootstrap.js"></script>
-  <script src="plugin/jquery.steps/jquery.steps.js"></script>
-  <script src="plugin/custom/js/step.js"></script>
+  <script src="plugin/jquery/jquery.slim.min.js"></script>
+  <script src="plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
