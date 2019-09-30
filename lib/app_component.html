@@ -23,41 +23,30 @@
             </form>
         </div>
         <div class="col-md-12 mt-2">
-            <button type="button" class="btn btn-outline-primary m-2">1</button>
-            <button type="button" class="btn btn-outline-primary m-2">2</button>
-            <button type="button" class="btn btn-outline-primary m-2">3</button>
-            <button type="button" class="btn btn-outline-primary m-2">4</button>
-            <button type="button" class="btn btn-outline-primary m-2">5</button>
-            <button type="button" class="btn btn-outline-primary m-2">6</button>
-            <button type="button" class="btn btn-outline-primary m-2">7</button>
-            <button type="button" class="btn btn-outline-primary m-2">8</button>
-            <button type="button" class="btn btn-outline-primary m-2">9</button>
-            <button type="button" class="btn btn-outline-primary m-2">10</button>
-            <button type="button" class="btn btn-outline-primary m-2">11</button>
-            <button type="button" class="btn btn-outline-primary m-2">12</button>
-            <button type="button" class="btn btn-outline-primary m-2">13</button>
-            <button type="button" class="btn btn-outline-primary m-2">15</button>
-            <button type="button" class="btn btn-outline-primary m-2">16</button>
-            <button type="button" class="btn btn-outline-primary m-2">17</button>
-            <button type="button" class="btn btn-outline-primary m-2">18</button>
-            <button type="button" class="btn btn-outline-primary m-2">19</button>
-            <button type="button" class="btn btn-outline-primary m-2">20</button>
-            <button type="button" class="btn btn-outline-primary m-2">21</button>
-            <button type="button" class="btn btn-outline-primary m-2">22</button>
-            <button type="button" class="btn btn-outline-primary m-2">23</button>
-            <button type="button" class="btn btn-outline-primary m-2">24</button>
-            <button type="button" class="btn btn-outline-primary m-2">25</button>
-            <button type="button" class="btn btn-outline-primary m-2">26</button>
-            <button type="button" class="btn btn-outline-primary m-2">27</button>
-            <button type="button" class="btn btn-outline-primary m-2">28</button>
-            <button type="button" class="btn btn-outline-primary m-2">29</button>
-            <button type="button" class="btn btn-outline-primary m-2">30</button>
+            <button type="button" class="btn btn-outline-primary m-2" *ngFor="let num of subjectNum; let i = index" [id]="num">{{(i+1)}}</button>
         </div>
         <div class="col-md-12">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-4">Fluid jumbotron</h1>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    <h1 class="display-4">{{subject}}</h1>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Second default radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled="">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Disabled radio
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
