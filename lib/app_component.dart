@@ -2,30 +2,52 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
+import 'package:answer_system/release.dart';
+import 'package:answer_system/release_service.dart';
 
 @Component(
   selector: 'my-app',
   templateUrl: 'app_component.html',
   directives: [coreDirectives, formDirectives],
+  providers: [ClassProvider(ReleaseService)],
 )
 class AppComponent implements AfterViewInit {
-  var startTime = '2019-10-13 09:10:00';
-  var endTime = '2019-10-13 09:40:00';
+  var startTime;
+  var endTime;
   var residueTime;
   var realName;
   var studentNumber;
+  var subject;
 
-  void calculationResidueTime() {
+  Release release;
+
+  final ReleaseService _releaseService;
+
+  AppComponent(this._releaseService);
+
+  void createResidueTime() {
     Timer.periodic(Duration(minutes: 1), handleResidueTime);
   }
 
   void handleResidueTime(Timer timer) {
-    residueTime =
-        DateTime(2019, 9, 30, 1, 0, 0, 0).difference(DateTime.now()).inMinutes;
+    calculationResidueTime();
+  }
+
+  void calculationResidueTime() {
+    residueTime = release.endTime.difference(DateTime.now()).inMinutes;
   }
 
   @override
-  void ngAfterViewInit() {
-    calculationResidueTime();
+  void ngAfterViewInit() async {
+    release = (await _releaseService.get('1'));
+    startTime = release.startTime;
+    endTime = release.endTime;
+    var now = DateTime.now();
+    if (now.isAfter(startTime) && now.isBefore(endTime)) {
+      calculationResidueTime();
+      createResidueTime();
+    } else {
+      subject = '未在考试时间范围';
+    }
   }
 }
