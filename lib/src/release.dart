@@ -4,21 +4,27 @@ class Release {
   DateTime releaseTime; // 发布时间
   DateTime startTime; // 考试开始时间
   DateTime endTime; // 考试结束时间
-  String answerBankId;// 题库id
-  String username;// 创建人账号
+  String answerBankId; // 题库id
+  String username; // 创建人账号
 
   Release(this.answerReleaseId, this.title, this.releaseTime, this.startTime,
       this.endTime, this.answerBankId, this.username);
 
   factory Release.fromJson(Map<String, dynamic> release) => Release(
-      release['answerReleaseId'],
-      release['title'],
-      _toDateTime(release['releaseTimeStr']),
-      _toDateTime(release['startTimeStr']),
-      _toDateTime(release['endTimeStr']),
-      release['answerBankId'],
-      release['username'],
-  );
+        null != release['answerReleaseId'] ? release['answerReleaseId'] : '',
+        null != release['title'] ? release['title'] : '',
+        null != release['releaseTimeStr']
+            ? _toDateTime(release['releaseTimeStr'])
+            : null,
+        null != release['startTimeStr']
+            ? _toDateTime(release['startTimeStr'])
+            : null,
+        null != release['endTimeStr']
+            ? _toDateTime(release['endTimeStr'])
+            : null,
+        null != release['answerBankId'] ? release['answerBankId'] : '',
+        null != release['username'] ? release['username'] : '',
+      );
 
   Map toJson() => {
         'id': answerReleaseId,

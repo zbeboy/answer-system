@@ -6,7 +6,6 @@ import 'package:answer_system/src/release.dart';
 import 'package:answer_system/src/work_book.dart';
 
 class ReleaseService {
-
   final Client _http;
 
   ReleaseService(this._http);
