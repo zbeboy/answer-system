@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'package:answer_system/release.dart';
-import 'package:answer_system/release_service.dart';
+import 'package:answer_system/src/release.dart';
+import 'package:answer_system/src/release_service.dart';
 
 @Component(
   selector: 'my-app',
@@ -44,8 +44,8 @@ class AppComponent implements AfterViewInit {
     endTime = release.endTime;
     var now = DateTime.now();
     if (now.isAfter(startTime) && now.isBefore(endTime)) {
-      calculationResidueTime();
       createResidueTime();
+      calculationResidueTime();
     } else {
       subject = '未在考试时间范围';
     }

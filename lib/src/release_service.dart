@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 
-import 'package:answer_system/release.dart';
-import 'package:answer_system/work_book.dart';
+import 'package:answer_system/src/release.dart';
+import 'package:answer_system/src/work_book.dart';
 
 class ReleaseService {
 
