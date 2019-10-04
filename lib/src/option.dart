@@ -6,6 +6,7 @@ class Option {
   int sort; // 排序
   String optionKey; // 选项key
   String answerSubjectId; // 题目id
+  String selectedKey;// 选择的key
 
   Option(this.answerOptionId, this.optionContent, this.sort, this.optionKey,
       this.answerSubjectId);
