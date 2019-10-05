@@ -66,7 +66,7 @@ class AppComponent implements AfterViewInit {
     var random = Random();
     int i = 0;
     while (i < 20) {
-      int num = random.nextInt(100);
+      int num = random.nextInt(100) + 1;
       if (!subjectCustomList.contains(num)) {
         subjectCustomList.add(num);
         i++;
@@ -191,7 +191,7 @@ class AppComponent implements AfterViewInit {
 
   @override
   void ngAfterViewInit() async {
-    release = await _releaseService.get('1');
+    release = await _releaseService.get('5f55ce9458b14187a6f45cc6228ccbd6');
     startTime = release.startTime;
     endTime = release.endTime;
     var now = DateTime.now();
