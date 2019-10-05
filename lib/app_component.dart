@@ -65,8 +65,8 @@ class AppComponent implements AfterViewInit {
     // 随机0~100之间，20个数不重复
     var random = Random();
     int i = 0;
-    while (i < 20) {
-      int num = random.nextInt(100) + 1;
+    while (i < 5) {
+      int num = random.nextInt(5) + 1;
       if (!subjectCustomList.contains(num)) {
         subjectCustomList.add(num);
         i++;
@@ -134,13 +134,14 @@ class AppComponent implements AfterViewInit {
       List<int> selectKeyCheck = List();
       for (int k = 0; k < subjects.length; k++) {
         bool hasSelect = false;
-        for (Option o in subjects[k].options) {
-          if (null != o.selectedKey) {
-            hasSelect = true;
-            break;
+        if(null != subjects[k].options){
+          for (Option o in subjects[k].options) {
+            if (null != o.selectedKey) {
+              hasSelect = true;
+              break;
+            }
           }
         }
-
         if (!hasSelect) {
           selectKeyCheck.add(k + 1);
         }
