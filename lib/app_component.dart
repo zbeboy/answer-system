@@ -119,6 +119,17 @@ class AppComponent implements AfterViewInit {
       nextLoading = 0;
       submitStyle = '';
       submitMsg = '';
+
+      startTime = release.startTime;
+      endTime = release.endTime;
+      var now = DateTime.now();
+      if (now.isBefore(startTime) ||
+          now.isAfter(endTime)) {
+        submitStyle = 'text-danger';
+        submitMsg = '未在考试时间范围';
+        return;
+      }
+
       if (null == realName || '' == realName.toString().trim()) {
         submitStyle = 'text-danger';
         submitMsg = '请填写姓名';
