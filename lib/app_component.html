@@ -36,7 +36,7 @@
                     <div class="form-check mt-3" *ngFor="let option of cuSubject?.options;let i = index">
                         <input class="form-check-input" type="radio" name="answerOptions" [id]="'op' + i.toString()"
                                [value]="option.optionKey"
-                               (click)="selectedKey(option.answerOptionId, option.optionKey)"
+                               (click)="selectedKey(option.optionKey)"
                                [checked]="option.selectedKey === option.optionKey">
                         <label class="form-check-label" [attr.for]="'op' + i.toString()">
                             {{option.optionKey}}. {{option.optionContent}}

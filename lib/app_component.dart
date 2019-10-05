@@ -102,8 +102,8 @@ class AppComponent implements AfterViewInit {
     if (subjectIndex > 0) {
       subjectIndex--;
       resetSubject();
-      prevLoading = 0;
     }
+    prevLoading = 0;
   }
 
   void nextSubject() async {
@@ -134,7 +134,7 @@ class AppComponent implements AfterViewInit {
       List<int> selectKeyCheck = List();
       for (int k = 0; k < subjects.length; k++) {
         bool hasSelect = false;
-        if(null != subjects[k].options){
+        if (null != subjects[k].options) {
           for (Option o in subjects[k].options) {
             if (null != o.selectedKey) {
               hasSelect = true;
@@ -163,6 +163,7 @@ class AppComponent implements AfterViewInit {
         for (Option o in s.options) {
           if (null != o.selectedKey) {
             solving.selectKey = o.selectedKey;
+            break;
           }
         }
 
@@ -184,10 +185,10 @@ class AppComponent implements AfterViewInit {
     resetSubject();
   }
 
-  void selectedKey(String answerOptionId, String optionKey) {
-    cuSubject.options
-        .firstWhere((h) => h.answerOptionId == answerOptionId)
-        .selectedKey = optionKey;
+  void selectedKey(String optionKey) {
+    for (Option option in cuSubject.options) {
+      option.selectedKey = optionKey;
+    }
   }
 
   @override
