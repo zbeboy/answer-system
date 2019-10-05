@@ -65,8 +65,8 @@ class AppComponent implements AfterViewInit {
     // 随机0~100之间，20个数不重复
     var random = Random();
     int i = 0;
-    while (i < 5) {
-      int num = random.nextInt(5) + 1;
+    while (i < 20) {
+      int num = random.nextInt(100) + 1;
       if (!subjectCustomList.contains(num)) {
         subjectCustomList.add(num);
         i++;
