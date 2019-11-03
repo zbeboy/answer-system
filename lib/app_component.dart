@@ -204,7 +204,7 @@ class AppComponent implements AfterViewInit {
 
   @override
   void ngAfterViewInit() async {
-    release = await _releaseService.get('9a89f592183843a2afa0ed80120101c8');
+    release = await _releaseService.get('5f55ce9458b14187a6f45cc6228ccbd6');
     startTime = release.startTime;
     endTime = release.endTime;
     var now = DateTime.now();

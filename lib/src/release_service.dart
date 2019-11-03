@@ -20,7 +20,7 @@ class ReleaseService {
     }
   }
 
-  dynamic _extractData(Response resp) => json.decode(resp.body)['release'];
+  dynamic _extractData(Response resp) => jsonDecode(Utf8Decoder().convert(resp.bodyBytes))['release'];
 
   Exception _handleError(dynamic e) {
     print(e);

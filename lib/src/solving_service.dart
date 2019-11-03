@@ -21,7 +21,7 @@ class SolvingService {
     }
   }
 
-  dynamic _extractData(Response resp) => json.decode(resp.body);
+  dynamic _extractData(Response resp) => jsonDecode(Utf8Decoder().convert(resp.bodyBytes));
 
   Exception _handleError(dynamic e) {
     print(e);

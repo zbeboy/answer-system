@@ -25,7 +25,7 @@ class SubjectService {
     }
   }
 
-  dynamic _extractData(Response resp) => json.decode(resp.body)['subject'];
+  dynamic _extractData(Response resp) => jsonDecode(Utf8Decoder().convert(resp.bodyBytes))['subject'];
 
   Exception _handleError(dynamic e) {
     print(e);
