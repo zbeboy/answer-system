@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7071d5fc-c37a-49c1-84f4-4cdb23df1d9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/app_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_component.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/release_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/release_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/solving_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/solving_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/subject_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/subject_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/work_book.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/work_book.dart" afterDir="false" />
-    </list>
+    <list default="true" id="7071d5fc-c37a-49c1-84f4-4cdb23df1d9c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -39,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/app_component.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="212">
-              <caret line="206" column="37" lean-forward="true" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -63,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/subject_service.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -158,10 +150,10 @@
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/lib/app_component.html" />
         <option value="$PROJECT_DIR$/lib/src/work_book.dart" />
-        <option value="$PROJECT_DIR$/lib/app_component.dart" />
         <option value="$PROJECT_DIR$/lib/src/release_service.dart" />
         <option value="$PROJECT_DIR$/lib/src/subject_service.dart" />
         <option value="$PROJECT_DIR$/lib/src/solving_service.dart" />
+        <option value="$PROJECT_DIR$/lib/app_component.dart" />
       </list>
     </option>
   </component>
@@ -171,9 +163,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="132" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="57" />
+    <option name="y" value="80" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -293,7 +285,7 @@
       <workItem from="1570263448274" duration="1097000" />
       <workItem from="1570460200838" duration="911000" />
       <workItem from="1572708286592" duration="3132000" />
-      <workItem from="1572784703675" duration="3803000" />
+      <workItem from="1572784703675" duration="3946000" />
     </task>
     <task id="LOCAL-00001" summary="更换ui">
       <created>1569769187764</created>
@@ -400,29 +392,35 @@
       <option name="project" value="LOCAL" />
       <updated>1572708356219</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="解决乱码">
+      <created>1572788587313</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572788587314</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71829000" />
+    <option name="totallyTimeSpent" value="71972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="106" width="1400" height="784" extended-state="1" />
-    <editor active="true" />
+    <frame x="47" y="65" width="1400" height="784" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2771261" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2771261" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39723927" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39723927" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32668713" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Dart Webdev" order="9" weight="0.3297546" />
+      <window_info active="true" anchor="bottom" id="Dart Webdev" order="9" visible="true" weight="0.3297546" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297546" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.35429448" />
@@ -454,7 +452,8 @@
     <MESSAGE value="优化" />
     <MESSAGE value="修正错误" />
     <MESSAGE value="新考试" />
-    <option name="LAST_COMMIT_MESSAGE" value="新考试" />
+    <MESSAGE value="解决乱码" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决乱码" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -653,16 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app_component.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="206" column="37" lean-forward="true" selection-start-line="206" selection-start-column="37" selection-end-line="206" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/option.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-282">
@@ -731,6 +720,16 @@
           <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app_component.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
